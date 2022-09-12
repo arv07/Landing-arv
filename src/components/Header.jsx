@@ -4,7 +4,7 @@ import DarkModeSwitch from "../assets/img/moon-yellow-1.png";
 
 export const Header = () => {
   return (
-    <header className="h-14 w-full bg-black-secundary flex flex-row justify-between">
+    <header className="fixed top-0 left-0 right-0 h-14 w-full bg-black-secundary flex flex-row justify-between">
       <div className="flex">
         <img src={Logo} className="h-16" alt="Logo" />
         <img src={DarkModeSwitch} className="h-8 m-3" alt="Dark Mode" />

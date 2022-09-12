@@ -4,7 +4,7 @@ import ProfilePicture from "../assets/img/profile-picture.png";
 export const Profile = () => {
   return (
     <>
-      <section className="flex justify-center w-full h-auto mt-28">
+      <section className="flex justify-center w-full h-auto my-28">
         <div className="w-2/4 ">
           <img src={ProfilePicture} className="rounded-full mx-auto" alt="" />
         </div>
@@ -24,7 +24,7 @@ export const Profile = () => {
         </div>
       </section>
       <div></div>
-      <span className="border-b border-indigo-500 h-2 mx-16 px-5 flex text-black-secundary mt-10"></span>
+      <span className="border-b mx-16 flex text-black-secundary mt-10"></span>
     </>
   );
 };
