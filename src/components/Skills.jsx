@@ -12,7 +12,7 @@ export const Skills = () => {
         <p className="font-fw-medium text-black-secundary text-5xl">Skills</p>
       </div>
 
-      <div className="grid gap-4 ml-6 mt-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+      <div className="grid gap-4  mt-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         <div className="bg-yellow-primary w-80 h-72 flex flex-col rounded-xl">
           <p className="text-3xl text-black-secundary text-center mt-6">
             Frontend

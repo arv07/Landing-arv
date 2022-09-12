@@ -9,7 +9,7 @@ export const Studies = () => {
         <p className="font-fw-medium text-black-secundary text-5xl">Estudios</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 ml-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ml-6">
         
         <div>
           <p className="font-fw-regular text-3xl mt-5 text-black-secundary">Igeniería de Sistemas</p>
@@ -32,7 +32,7 @@ export const Studies = () => {
       </div>
 
       <p className="font-fw-regular text-3xl text-black-secundary mt-10">Cursos</p>
-      <div className="grid grid-cols-2 gap-4 ml-6 mt-2">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ml-6 mt-2">
         
         <div>
           <p className="font-fw-regular text-3xl mt-5 text-black-secundary">Visualización de Datos</p>

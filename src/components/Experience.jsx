@@ -12,7 +12,7 @@ export const Experience = () => {
           </p>
         </div>
 
-        <div className="grid gap-4 ml-6 mt-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+        <div className="grid gap-4 mt-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
           <div className="bg-yellow-primary w-80 h-72 flex flex-col rounded-xl">
             <div className="bg-black-secundary rounded-t-xl h-28">
               <p className="text-2xl text-white-primary text-center px-10 my-10">

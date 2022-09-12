@@ -5,6 +5,7 @@ import { Profile } from './components/Profile';
 import { Studies } from './components/Studies';
 import { Skills } from './components/Skills';
 import { Experience } from './components/Experience';
+import { Projects } from './components/Projects';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <Studies/>
     <Skills/>
     <Experience/>
+    <Projects/>
     </>
   )
 }
