@@ -3,6 +3,7 @@ import './App.css'
 import { Header } from './components/Header';
 import { Profile } from './components/Profile';
 import { Studies } from './components/Studies';
+import { Skills } from './components/Skills';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <Header/>
     <Profile/>
     <Studies/>
+    <Skills/>
     </>
   )
 }
