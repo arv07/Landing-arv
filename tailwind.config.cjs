@@ -17,7 +17,12 @@ module.exports = {
     },
     fontFamily: {
       'Roboto': ['"Roboto"', 'sans-serif']
-    }
+    },
+    /*screens: {
+      'xs': '475px',
+      'xxs': '360px',
+      
+    },*/
   },
   plugins: [],
 }

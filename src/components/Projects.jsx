@@ -5,10 +5,10 @@ import TrelloIcon from "../assets/img/trello-icon.png";
 export const Projects = () => {
   return (
     <>
-      <section className="mt-10 mx-10 my-28">
+      <section className="mt-10 mx-5 sm:mx-20 md:mx-32 xl:mx-48 py-10 sm:py-14 md:py-20">
         <div className="flex flex-row">
           <img src={ProjectsIcon} className="mr-4" alt="Icon Studies" />
-          <p className="font-fw-medium text-black-secundary text-5xl">
+          <p className="font-fw-medium text-black-secundary text-4xl">
             Proyectos
           </p>
         </div>
@@ -48,7 +48,7 @@ export const Projects = () => {
        
         </div>
 
-        <span className="border-b mx-16 flex text-black-secundary mt-10"></span>
+        <span className="border-b w-full flex text-black-secundary mt-10"></span>
       </section>
     </>
   );
