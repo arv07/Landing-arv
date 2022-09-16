@@ -32,8 +32,8 @@ function App() {
   return (
     <>
     <Header changeMode={changeMode}/>
-    <Profile/>
-    <Studies/>
+    <Profile nightMode={nightMode}/>
+    <Studies nightMode={nightMode}/>
     <Skills/>
     <Experience/>
     <Projects/>

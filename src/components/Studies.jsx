@@ -1,18 +1,18 @@
 import React from "react";
 import StudiesIcon from "../assets/img/studies-icon.png";
 
-export const Studies = () => {
+export const Studies = ({nightMode}) => {
   return (
     <section className="mt-10 mx-5 sm:mx-20 md:mx-32 xl:mx-48 py-10 sm:py-14 md:py-20">
       <div className="flex flex-row">
         <img src={StudiesIcon} className="mr-4" alt="Icon Studies" />
-        <p className="font-fw-medium text-black-secundary text-4xl">Estudios</p>
+        <p className={`font-fw-medium text-black-secundary text-4xl ${nightMode == true ? 'text-white-primary' : ''}`}>Estudios</p>
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ml-6 mt-6">
         
         <div>
-          <p className="font-fw-regular text-2xl mt-5 text-black-secundary">Igeniería de Sistemas</p>
+          <p className={`font-fw-regular text-2xl mt-5 text-black-secundary ${nightMode == true ? 'text-white-primary' : ''}`}>Igeniería de Sistemas</p>
           <p className="font-fw-light text-gray-primary text-lg mt-2">
             Universidad Los Libertadores
           </p>
@@ -20,7 +20,7 @@ export const Studies = () => {
         </div>
 
         <div className="">
-          <p className="font-fw-regular text-2xl mt-5 text-black-secundary">
+          <p className={`font-fw-regular text-2xl mt-5 text-black-secundary ${nightMode == true ? 'text-white-primary' : ''}`}>
             Técnico Bachiller en Sistemas
           </p>
           <p className="font-fw-light text-gray-primary text-lg mt-2">
@@ -35,7 +35,7 @@ export const Studies = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ml-6 mt-2">
         
         <div>
-          <p className="font-fw-regular text-2xl mt-5 text-black-secundary">Visualización de Datos</p>
+          <p className={`font-fw-regular text-2xl mt-5 text-black-secundary ${nightMode == true ? 'text-white-primary' : ''}`}>Visualización de Datos</p>
           <p className="font-fw-light text-gray-primary text-lg mt-2">
             Platzi
           </p>
@@ -43,7 +43,7 @@ export const Studies = () => {
         </div>
 
         <div className="">
-          <p className="font-fw-regular text-2xl mt-5 text-black-secundary">
+          <p className={`font-fw-regular text-2xl mt-5 text-black-secundary ${nightMode == true ? 'text-white-primary' : ''}`}>
             Python
           </p>
           <p className="font-fw-light text-gray-primary text-lg mt-2">
@@ -53,7 +53,7 @@ export const Studies = () => {
         </div>
 
         <div className="">
-          <p className="font-fw-regular text-2xl mt-5 text-black-secundary">
+          <p className={`font-fw-regular text-2xl mt-5 text-black-secundary ${nightMode == true ? 'text-white-primary' : ''}`}>
             Desarrollador Frontend con ReactJS
           </p>
           <p className="font-fw-light text-gray-primary text-lg mt-2">
