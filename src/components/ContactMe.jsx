@@ -4,7 +4,7 @@ import ContactMeIcon from "../assets/img/email-icon.png";
 export const ContactMe = () => {
   return (
     <>
-      <section className="mt-10 mx-5 sm:mx-20 md:mx-32 xl:mx-48 py-10 sm:py-14 md:py-20">
+      <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 mt-14">
         <div className="flex flex-row">
           <img src={ContactMeIcon} className="mr-4" alt="Icon Studies" />
           <p className="font-fw-medium text-black-secundary text-4xl">
@@ -14,7 +14,7 @@ export const ContactMe = () => {
 
         <div className="flex flex-col  items-center  w-full">
 
-          <form action="" className="flex flex-col w-full sm:w-11/12 md:w-11/12 lg:w-3/5 xl:w-3/5">
+          <form action="" className="flex flex-col w-full sm:w-11/12 md:w-11/12 lg:w-3/5 xl:w-3/5 mt-10">
             <input 
                 type="text" 
                 name="" id="" 

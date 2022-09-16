@@ -6,7 +6,7 @@ import SqlIcon from "../assets/img/sql-icon2.png";
 
 export const Skills = () => {
   return (
-    <section className="mt-10 mx-5 sm:mx-20 md:mx-32 xl:mx-48 py-10 sm:py-14 md:py-20">
+    <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 ">
       <div className="flex flex-row">
         <img src={SkillsIcon} className="mr-4" alt="Icon Studies" />
         <p className="font-fw-medium text-black-secundary text-4xl">
@@ -14,7 +14,7 @@ export const Skills = () => {
         </p>
       </div>
 
-      <div className="grid gap-4 mt-10 md:grid-cols-2 lg:grid-cols-3 justify-items-center ">
+      <div className="grid gap-4 grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 mt-10 justify-items-center ">
 
         <div className="bg-yellow-primary w-80 h-96 flex flex-col rounded-xl shadow-black shadow-xl">
           <div className="flex justify-center items-center w-full h-40 rounded-t-lg  bg-black-secundary">

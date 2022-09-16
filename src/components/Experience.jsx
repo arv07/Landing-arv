@@ -4,7 +4,7 @@ import ExperienceIcon from "../assets/img/experience-icon.png";
 export const Experience = () => {
   return (
     <>
-      <section className="mt-10 mx-5 sm:mx-20 md:mx-32 xl:mx-48 py-10 sm:py-14 md:py-20">
+      <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 mt-14">
         <div className="flex flex-row">
           <img src={ExperienceIcon} className="mr-4" alt="Icon Studies" />
           <p className="font-fw-medium text-black-secundary text-4xl">
