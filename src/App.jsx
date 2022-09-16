@@ -12,10 +12,26 @@ import { HeaderPro } from './components/HeaderPro';
 
 function App() {
 
+  const [nightMode, setNightMode] = useState(false);
+
+  const changeMode = () => {
+    /*console.log('mensaje');*/
+    
+
+    if (nightMode == false) {
+      setNightMode(true);
+      const list = document.getElementById("darkmode").classList
+      list.add("bg-black-primary")
+    } else if (nightMode == true) {
+      setNightMode(false);
+      const list = document.getElementById("darkmode").classList
+      list.remove("bg-black-primary")
+    }
+  };
 
   return (
     <>
-    <Header/>
+    <Header changeMode={changeMode}/>
     <Profile/>
     <Studies/>
     <Skills/>

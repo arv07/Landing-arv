@@ -31,4 +31,14 @@ export const projectsData = [
     preview_link: "",
     github: ""
   },
+  {
+    id: 4,
+    title: "Landing page personal",
+    description:
+      "Página que contiene la hoja de vida con la información relacionada a estudios, proyectos y experiencia.",
+    capture: "https://firebasestorage.googleapis.com/v0/b/project-test-2eeea.appspot.com/o/landing%2Flanding-icon.png?alt=media&token=7e5f6b18-dd18-4c1d-8d9c-1ed7eb0ace78",
+    developed_in: ["HTML", "React", "Tailwindcss"],
+    preview_link: "",
+    github: ""
+  },
 ];

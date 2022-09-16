@@ -18,6 +18,7 @@ module.exports = {
     fontFamily: {
       'Roboto': ['"Roboto"', 'sans-serif']
     },
+    darkMode: 'class'
     /*screens: {
       'xs': '475px',
       'xxs': '360px',
