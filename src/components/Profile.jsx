@@ -25,7 +25,7 @@ export const Profile = ({nightMode}) => {
           <p className={`font-fw-medium text-black-secundary text-5xl mt-10 sm:mt-10 lg:mt-1 ${nightMode == true ? 'text-white-primary' : ''}`}>
             Andres Rico
           </p>
-          <p className="font-fw-regular text-yellow-primary text-2xl mt-2">
+          <p className="font-fw-regular text-yellow-primary text-2xl mt-2 bg-black-secundary rounded-md w-64 px-5">
             Frontend Developer
           </p>
           <p className={`font-fw-regular text-black-secundary text-lg mt-5 pr-20 ${nightMode == true ? 'text-gray-primary' : ''}`}>

@@ -7,6 +7,7 @@ import { Skills } from './components/Skills';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { ContactMe } from './components/ContactMe';
+import { Footer } from './components/Footer';
 import { HeaderPro } from './components/HeaderPro';
 
 
@@ -31,13 +32,14 @@ function App() {
 
   return (
     <>
-    <Header changeMode={changeMode}/>
+    <Header changeMode={changeMode} nightMode={nightMode}/>
     <Profile nightMode={nightMode}/>
     <Studies nightMode={nightMode}/>
-    <Skills/>
-    <Experience/>
-    <Projects/>
-    <ContactMe/>
+    <Skills nightMode={nightMode}/>
+    <Experience nightMode={nightMode}/>
+    <Projects nightMode={nightMode}/>
+    <ContactMe nightMode={nightMode}/>
+    <Footer/>
     </>
   )
 }

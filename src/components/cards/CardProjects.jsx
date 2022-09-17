@@ -15,7 +15,7 @@ export const CardProjects = ({title, description, capture, developed_in, preview
       alt=""
     />
 
-    <div className="flex flex-col w-full lg:w-3/4 bg-black-primary rounded-r-lg shadow-black shadow-xl">
+    <div className="flex flex-col w-full lg:w-3/4 bg-black-secundary rounded-r-lg shadow-black shadow-xl">
       <p className="text-3xl text-white-primary text-center mt-6">{title}</p>
       <p className="text-gray-primary px-10 mt-10 text-justify ">
         {description}
@@ -23,9 +23,9 @@ export const CardProjects = ({title, description, capture, developed_in, preview
       <p className="text-gray-primary font-fw-medium px-10 mt-5 text-justify ">
         Desarrollado en:
       </p>
-      <ul className="flex flex-row mx-auto w-full list-none list-outside">
+      <ul className="flex flex-row mx-auto w-full list-none list-outside gap-3 pl-10">
         {developed_in.map((item,index) => (
-          <li key={index} className="bg-yellow-primary w-24 text-black-secundary text-center rounded-lg py-1 mt-3 mx-auto">
+          <li key={index} className="bg-gray-primary w-24 text-black-primary text-center rounded-lg py-1 mt-3 ">
             {item}
           </li>
         ))}

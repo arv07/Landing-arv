@@ -1,13 +1,15 @@
 import React from "react";
 import ExperienceIcon from "../assets/img/experience-icon.png";
 
-export const Experience = () => {
+export const Experience = ({nightMode}) => {
   return (
     <>
       <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 mt-14">
         <div className="flex flex-row">
           <img src={ExperienceIcon} className="mr-4" alt="Icon Studies" />
-          <p className="font-fw-medium text-black-secundary text-4xl">
+          <p className={`font-fw-medium text-black-secundary text-4xl ${
+            nightMode == true ? "text-white-primary" : ""
+          }`}>
             Experiencia
           </p>
         </div>
@@ -20,7 +22,7 @@ export const Experience = () => {
               </p>
             </div>
 
-            <div className="flex flex-row justify-center w-auto h-auto my-auto mx-10">
+            <div className="flex flex-row justify-center w-auto h-auto my-auto mx-10 text-justify">
               <p>
                 Configuración procesos ETL con Data Management y programación de
                 Scripts. Implementación Planning PBCS de Oracle.
@@ -35,7 +37,7 @@ export const Experience = () => {
               </p>
             </div>
 
-            <div className="flex flex-row justify-center w-auto h-auto my-auto mx-10">
+            <div className="flex flex-row justify-center w-auto h-auto my-auto mx-10 text-justify">
               <p>
                 Apoyo en la construcción y ejecución de pruebas de los planes de
                 continuidad de negocio, ante riesgos tecnológicos, documentación de
