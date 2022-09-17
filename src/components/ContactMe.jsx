@@ -1,10 +1,13 @@
 import React from "react";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 import ContactMeIcon from "../assets/img/email-icon.png";
 
 export const ContactMe = ({nightMode}) => {
   return (
     <>
-      <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 mt-14">
+      <Element name="contactme"></Element>
+      <section  className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 mt-14">
         <div className="flex flex-row">
           <img src={ContactMeIcon} className="mr-4" alt="Icon Studies" />
           <p className={`font-fw-medium text-black-secundary text-4xl ${

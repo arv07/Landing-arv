@@ -1,12 +1,15 @@
 import React from "react";
 import StudiesIcon from "../assets/img/studies-icon.png";
 import { studiesData } from "../data/StudiesData";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 export const Studies = ({ nightMode }) => {
   
 
   return (
+    <>
+    <Element name="studies"></Element>
     <section className="mt-10 mx-5 sm:mx-20 md:mx-32 xl:mx-48 py-10 sm:py-14 md:py-20">
       <div className="flex flex-row">
         <img src={StudiesIcon} className="mr-4" alt="Icon Studies" />
@@ -64,5 +67,6 @@ export const Studies = ({ nightMode }) => {
 
       <span className="border-b w-full flex text-black-secundary mt-10 "></span>
     </section>
+    </>
   );
 };

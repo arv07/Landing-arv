@@ -1,9 +1,11 @@
 import React from "react";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import ExperienceIcon from "../assets/img/experience-icon.png";
 
 export const Experience = ({nightMode}) => {
   return (
     <>
+    <Element name="experience"></Element>
       <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 mt-14">
         <div className="flex flex-row">
           <img src={ExperienceIcon} className="mr-4" alt="Icon Studies" />

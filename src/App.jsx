@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Profile } from "./components/Profile";
@@ -8,14 +8,18 @@ import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { ContactMe } from "./components/ContactMe";
 import { Footer } from "./components/Footer";
+import * as Scroll from 'react-scroll';
 import { HeaderPro } from "./components/HeaderPro";
+import { Link, Router } from "react-router-dom";
 
 function App() {
   const [nightMode, setNightMode] = useState(false);
 
+  const scrollToRef = useRef();
+
   useEffect(() => {
     const nightModeLocalStorage = localStorage.getItem("darkMode");
-    
+
     if (nightModeLocalStorage == null && nightMode == false) {
       localStorage.setItem("darkMode", "false");
     } else if (nightModeLocalStorage == "true") {
@@ -39,14 +43,19 @@ function App() {
 
   return (
     <>
-      <Header changeMode={changeMode} nightMode={nightMode} />
-      <Profile nightMode={nightMode} />
-      <Studies nightMode={nightMode} />
-      <Skills nightMode={nightMode} />
-      <Experience nightMode={nightMode} />
-      <Projects nightMode={nightMode} />
-      <ContactMe nightMode={nightMode} />
-      <Footer />
+     
+        
+        <Header changeMode={changeMode} nightMode={nightMode} />
+        
+        <Profile nightMode={nightMode} />  
+        
+        <Studies nightMode={nightMode} />
+        <Skills nightMode={nightMode} />
+        <Experience nightMode={nightMode} />
+        <Projects nightMode={nightMode} />
+        <ContactMe nightMode={nightMode} scrollToRef={scrollToRef} />
+        <Footer />
+      
     </>
   );
 }

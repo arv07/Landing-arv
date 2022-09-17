@@ -1,5 +1,6 @@
 import React from "react";
 import ProfilePicture from "../assets/img/profile-picture.jpg";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { useState } from "react";
 
 export const Profile = ({nightMode}) => {
@@ -9,6 +10,7 @@ export const Profile = ({nightMode}) => {
 
   return (
     <>
+    <Element name="profile"></Element>
       <section
         className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2  justify-center items-center content-center h-auto my-40 mx-auto w-full sm:w-10/12 lg:w-9/12`}
       >

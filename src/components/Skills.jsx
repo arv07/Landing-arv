@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import SkillsIcon from "../assets/img/skills-2.png";
 import FrontendIcon from "../assets/img/frontend-icon.png";
 import BackendIcon from "../assets/img/backend-icon.png";
@@ -6,6 +7,8 @@ import SqlIcon from "../assets/img/sql-icon2.png";
 
 export const Skills = ({nightMode}) => {
   return (
+    <>
+    <Element name="skills"></Element>
     <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 ">
       <div className="flex flex-row">
         <img src={SkillsIcon} className="mr-4" alt="Icon Studies" />
@@ -67,5 +70,6 @@ export const Skills = ({nightMode}) => {
 
       <span className="border-b w-full flex text-black-secundary mt-10"></span>
     </section>
+    </>
   );
 };
