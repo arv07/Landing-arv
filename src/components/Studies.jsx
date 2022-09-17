@@ -1,7 +1,7 @@
 import React from "react";
 import StudiesIcon from "../assets/img/studies-icon.png";
 import { studiesData } from "../data/StudiesData";
-import { CardStudies } from "./cards/CardStudies";
+
 
 export const Studies = ({ nightMode }) => {
   
@@ -39,7 +39,9 @@ export const Studies = ({ nightMode }) => {
         ))}
       </div>
 
-      <p className="font-fw-regular text-3xl text-black-secundary mt-10">
+      <p className={`font-fw-medium text-3xl text-black-secundary mt-10 ${
+                nightMode == true ? "text-white-primary" : ""
+              }`}>
         Cursos
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ml-6 mt-2">
