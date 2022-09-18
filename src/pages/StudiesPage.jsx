@@ -14,8 +14,8 @@ export const Studies = ({ nightMode }) => {
       <div className="flex flex-row">
         <img src={StudiesIcon} className="mr-4" alt="Icon Studies" />
         <p
-          className={`font-fw-medium text-black-secundary text-4xl ${
-            nightMode == true ? "text-white-primary" : ""
+          className={`font-fw-medium  text-4xl ${
+            nightMode == true ? "text-white-primary" : "text-black-secundary"
           }`}
         >
           Estudios
@@ -26,8 +26,8 @@ export const Studies = ({ nightMode }) => {
         {studiesData.formal_studies.map((studies) => (
           <div key={studies.id}>
             <p
-              className={`font-fw-regular text-2xl mt-5 text-black-secundary ${
-                nightMode == true ? "text-white-primary" : ""
+              className={`font-fw-regular text-2xl mt-5  ${
+                nightMode == true ? "text-white-primary" : "text-black-secundary"
               }`}
             >
               {studies.title}
@@ -42,8 +42,8 @@ export const Studies = ({ nightMode }) => {
         ))}
       </div>
 
-      <p className={`font-fw-medium text-3xl text-black-secundary mt-10 ${
-                nightMode == true ? "text-white-primary" : ""
+      <p className={`font-fw-medium text-3xl  mt-10 ${
+                nightMode == true ? "text-white-primary" : "text-black-secundary"
               }`}>
         Cursos
       </p>
@@ -51,8 +51,8 @@ export const Studies = ({ nightMode }) => {
         {studiesData.courses.map((courses) => (
           <div key={courses.id}>
             <p
-              className={`font-fw-regular text-2xl mt-5 text-black-secundary ${
-                nightMode == true ? "text-white-primary" : ""
+              className={`font-fw-regular text-2xl mt-5  ${
+                nightMode == true ? "text-white-primary" : "text-black-secundary"
               }`}
             >
               {courses.title}

@@ -15,8 +15,8 @@ export const Projects = ({nightMode}) => {
       <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 mt-14">
         <div className="flex flex-row">
           <img src={ProjectsIcon} className="mr-4" alt="Icon Studies" />
-          <p className={`font-fw-medium text-black-secundary text-4xl ${
-            nightMode == true ? "text-white-primary" : ""
+          <p className={`font-fw-medium  text-4xl ${
+            nightMode == true ? "text-white-primary" : "text-black-secundary"
           }`}>
             Proyectos
           </p>

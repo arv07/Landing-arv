@@ -38,8 +38,8 @@ export const Profile = ({ nightMode }) => {
             Frontend Developer
           </p>
           <p
-            className={`font-fw-regular text-black-secundary text-lg mt-5 pr-20 ${
-              nightMode == true ? "text-gray-primary" : ""
+            className={`font-fw-regular  text-lg mt-5 pr-20 ${
+              nightMode == true ? "text-gray-primary" : "text-black-secundary"
             }`}
           >
             Ingeniero de sistemas y estudiante en Análisis de Datos,
