@@ -26,6 +26,7 @@ export const CardProjects = ({title, description, capture, developed_in, preview
       <p className="text-gray-primary font-fw-medium px-10 mt-5 text-justify ">
         Desarrollado en:
       </p>
+      
       <ul className="flex flex-row px-10 w-full h-auto list-none list-outside gap-3 ">
         {developed_in.map((item,index) => (
           <li key={index} className="bg-gray-primary w-auto text-black-primary text-center rounded-lg py-1 mt-4 px-3">
