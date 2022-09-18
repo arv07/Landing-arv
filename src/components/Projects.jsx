@@ -1,18 +1,23 @@
 import React from "react";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import ProjectsIcon from "../assets/img/projects-icon.png";
 import TrelloIcon from "../assets/img/trello-icon2.png";
+
 import { projectsData } from "../data/ProjectsData";
 import { CardProjects } from "./cards/CardProjects";
 
-export const Projects = () => {
+export const Projects = ({nightMode}) => {
   //console.log(projectsData[0].title);
 
   return (
     <>
+    <Element name="projects"></Element>
       <section className="mx-5 sm:mx-20 md:mx-32 xl:mx-48 mt-14">
         <div className="flex flex-row">
           <img src={ProjectsIcon} className="mr-4" alt="Icon Studies" />
-          <p className="font-fw-medium text-black-secundary text-4xl">
+          <p className={`font-fw-medium text-black-secundary text-4xl ${
+            nightMode == true ? "text-white-primary" : ""
+          }`}>
             Proyectos
           </p>
         </div>
@@ -25,6 +30,7 @@ export const Projects = () => {
               description={project.description}
               capture={project.capture}
               developed_in={project.developed_in}
+              github={project.github}
             />
           ))}
         </div>
