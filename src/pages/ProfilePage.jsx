@@ -28,8 +28,8 @@ export const Profile = ({ nightMode }) => {
 
         <div className="flex flex-col w-full justify-center pl-10 pr-10 mx-auto">
           <p
-            className={`font-fw-medium text-black-secundary text-5xl mt-10 sm:mt-10 lg:mt-1 ${
-              nightMode == true ? "text-white-primary" : ""
+            className={`font-fw-medium  text-5xl mt-10 sm:mt-10 lg:mt-1 ${
+              nightMode == true ? "text-white-primary" : "text-black-secundary"
             }`}
           >
             Andres Rico
