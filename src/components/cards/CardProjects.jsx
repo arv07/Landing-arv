@@ -36,10 +36,13 @@ export const CardProjects = ({title, description, capture, developed_in, preview
       </ul>
       <div className="flex items-center justify-center content-center mt-8  gap-5 mb-5 mx-3">
         
+        <a href={preview_link} target="_blank">
         <button className="w-44 py-2 flex flex-row justify-center bg-yellow-primary rounded-lg px-3 ">
         <img src={EyeIcon} className='w-7 h-7' alt="" />  
           <span className="py-1 ml-2">Vista Previa</span> 
         </button>
+        </a>
+        
 
         <a href={github} target="_blank">
         <button className="w-44 py-2 flex flex-row justify-center bg-yellow-primary rounded-lg px-3 ">
