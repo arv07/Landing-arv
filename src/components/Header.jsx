@@ -37,26 +37,26 @@ export const Header = ({ changeMode, nightMode }) => {
 
       <div className="flex items-center">
         <Link to="profile" offset={-100} smooth={true} duration={900} spy={true}>
-          <p className="font-fw-light text-white-primary px-3">Perfil</p>
+          <p className="font-fw-light text-white-primary px-3 hover:text-yellow-primary cursor-pointer">Perfil</p>
         </Link>
 
-        <Link to="studies">
-          <p className="font-fw-light text-white-primary px-3">Estudios</p>
+        <Link to="studies" smooth={true} duration={900} spy={true}>
+          <p className="font-fw-light text-white-primary px-3 hover:text-yellow-primary cursor-pointer">Estudios</p>
         </Link>
 
-        <Link to="skills" offset={-70}>
-          <p className="font-fw-light text-white-primary px-3">Skills</p>
+        <Link to="skills" offset={-70} smooth={true} duration={900} spy={true}>
+          <p className="font-fw-light text-white-primary px-3 hover:text-yellow-primary cursor-pointer">Habilidades</p>
         </Link>
 
-        <Link to="experience">
-          <p className="font-fw-light text-white-primary px-3">Experiencia</p>
+        <Link to="experience"   smooth={true} duration={900} spy={true}>
+          <p className="font-fw-light text-white-primary px-3 hover:text-yellow-primary cursor-pointer">Experiencia</p>
         </Link>
-        <Link to="projects">
-          <p className="font-fw-light text-white-primary px-3">Proyectos</p>
+        <Link to="projects" smooth={true} duration={900} spy={true}>
+          <p className="font-fw-light text-white-primary px-3 hover:text-yellow-primary cursor-pointer">Proyectos</p>
         </Link>
 
-        <Link to="contactme">
-          <p className="font-fw-light text-white-primary px-3 mr-8">
+        <Link to="contactme" smooth={true} duration={900} spy={true}>
+          <p className="font-fw-light text-white-primary px-3 mr-8 hover:text-yellow-primary cursor-pointer">
             Contáctame
           </p>
         </Link>

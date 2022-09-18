@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import EyeIcon from '../assets/img/eye-icon.png';
 import ExperienceIcon from "../assets/img/experience-icon.png";
 
 export const Experience = ({nightMode}) => {
@@ -27,7 +28,8 @@ export const Experience = ({nightMode}) => {
             <div className="flex flex-row justify-center w-auto h-auto my-auto mx-10 text-justify">
               <p>
                 Configuración procesos ETL con Data Management y programación de
-                Scripts. Implementación Planning PBCS de Oracle.
+                Scripts. Implementación Planning PBCS de Oracle.{" "}
+                <span className="text-yellow-primary text-xl mt-2  bg-black-secundary rounded-md w-20 text-center px-2">2019-2022</span>
               </p>
             </div>
           </div>
@@ -43,8 +45,10 @@ export const Experience = ({nightMode}) => {
               <p>
                 Apoyo en la construcción y ejecución de pruebas de los planes de
                 continuidad de negocio, ante riesgos tecnológicos, documentación de
-                incidentes y pruebas.
+                incidentes y pruebas.{" "}
+                <span className="text-yellow-primary text-xl mt-2  bg-black-secundary rounded-md w-20 text-center px-2">2018</span>
               </p>
+              
             </div>
           </div>
         </div>

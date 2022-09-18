@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import EyeIcon from '../../assets/img/eye-icon.png';
+import GithubIcon from '../../assets/img/github-icon.png';
 
 export const CardProjects = ({title, description, capture, developed_in, preview_link, github}) => {
 
-    //console.log(developed_in);
+    console.log(github);
 
     //developed_in.map(item => {console.log(item);})
 
@@ -23,20 +26,30 @@ export const CardProjects = ({title, description, capture, developed_in, preview
       <p className="text-gray-primary font-fw-medium px-10 mt-5 text-justify ">
         Desarrollado en:
       </p>
-      <ul className="flex flex-row mx-auto w-full list-none list-outside gap-3 pl-10">
+      <ul className="flex flex-row px-10 w-full h-auto list-none list-outside gap-3 ">
         {developed_in.map((item,index) => (
-          <li key={index} className="bg-gray-primary w-24 text-black-primary text-center rounded-lg py-1 mt-3 ">
+          <li key={index} className="bg-gray-primary w-auto text-black-primary text-center rounded-lg py-1 mt-4 px-3">
             {item}
           </li>
         ))}
       </ul>
-      <div className="flex items-center justify-center content-center mt-8 mx-28 gap-5 mb-5">
-        <button className="w-6/12 py-2 bg-yellow-primary rounded-lg">
-          Vista Previa
+      <div className="flex items-center justify-center content-center mt-8  gap-5 mb-5 mx-3">
+        
+        <button className="w-44 py-2 flex flex-row justify-center bg-yellow-primary rounded-lg px-3 ">
+        <img src={EyeIcon} className='w-7 h-7' alt="" />  
+          <span className="py-1 ml-2">Vista Previa</span> 
         </button>
-        <button className="w-6/12 py-2 bg-yellow-primary rounded-lg">
-          Git Hub
-        </button>
+
+        <a href={github} target="_blank">
+        <button className="w-44 py-2 flex flex-row justify-center bg-yellow-primary rounded-lg px-3 ">
+          <img src={GithubIcon} className='w-7 h-7' alt="" />  
+            <span className="py-1 ml-2">Github</span> 
+          </button>
+        </a>
+          
+          
+        
+        
       </div>
     </div>
   </div>
