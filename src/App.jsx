@@ -1,15 +1,15 @@
 import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
-import { Profile } from "./components/Profile";
-import { Studies } from "./components/Studies";
-import { Skills } from "./components/Skills";
-import { Experience } from "./components/Experience";
-import { Projects } from "./components/Projects";
-import { ContactMe } from "./components/ContactMe";
+import { Profile } from "./pages/ProfilePage";
+import { Studies } from "./pages/StudiesPage";
+import { Skills } from "./pages/SkillsPage";
+import { Experience } from "./pages/ExperiencePage";
+import { Projects } from "./pages/ProjectsPage";
+import { ContactMe } from "./pages/ContactMePage";
 import { Footer } from "./components/Footer";
 import * as Scroll from 'react-scroll';
-import { HeaderPro } from "./components/HeaderPro";
+
 import { Link, Router } from "react-router-dom";
 
 function App() {

@@ -1,6 +1,6 @@
 import React from "react";
 import StudiesIcon from "../assets/img/studies-icon.png";
-import { studiesData } from "../data/StudiesData";
+import { studiesData } from "../database/StudiesData";
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 

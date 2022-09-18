@@ -3,8 +3,8 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 import ProjectsIcon from "../assets/img/projects-icon.png";
 import TrelloIcon from "../assets/img/trello-icon2.png";
 
-import { projectsData } from "../data/ProjectsData";
-import { CardProjects } from "./cards/CardProjects";
+import { projectsData } from "../database/ProjectsData";
+import { CardProjects } from "../components/cards/CardProjects";
 
 export const Projects = ({nightMode}) => {
   //console.log(projectsData[0].title);
@@ -31,6 +31,7 @@ export const Projects = ({nightMode}) => {
               capture={project.capture}
               developed_in={project.developed_in}
               github={project.github}
+              preview_link={project.preview_link}
             />
           ))}
         </div>
