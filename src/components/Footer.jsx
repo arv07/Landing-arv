@@ -1,6 +1,6 @@
 import React from "react";
-import TwitterIcon from "../assets/img/twitter-icon.png";
-import LinkedInIcon from "../assets/img/linkedin-icon.png";
+import TwitterIcon from "../assets/img/twitter-icon2.png";
+import LinkedInIcon from "../assets/img/linkedin-icon2.png";
 
 export const Footer = () => {
   return (
